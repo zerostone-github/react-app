@@ -1,42 +1,8 @@
 import { Component } from 'react';
 import './App.css';
-
-
-class TOC extends Component{
-  render(){
-    return(
-      <nav>
-          <ul>
-              <li><a href="1.html">HTML</a></li>
-              <li><a href="2.html">CSS</a></li>
-              <li><a href="3.html">JavaScript</a></li>
-          </ul>
-      </nav>
-    );
-  }
-}
-
-class Content extends Component{
-  render(){
-    return(
-      <article>
-          <h2>HTML</h2>
-          HTML is HyperText Markup Lanaguage.
-      </article>
-    );
-  }
-}
-
-class Subject extends Component{
-  render(){
-    return (
-      <header>
-          <h1>{this.props.title}</h1>
-          {this.props.sub}
-      </header>
-    );
-  }
-}
+import TOC from './components/TOC';
+import Subject from './components/Subject';
+import Content from './components/Content';
 
 class App extends Component {
   render(){
@@ -45,7 +11,7 @@ class App extends Component {
         <Subject title="WEB" sub="World Wide Web!!"></Subject>
         <Subject title="REACT" sub="this is amazing!!"></Subject>
         <TOC></TOC>
-        <Content></Content>
+        <Content title="HTML" content="HTML is HyperText Markup Lanaguage. "></Content>
       </div>
     );
   }
