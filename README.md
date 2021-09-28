@@ -1,3 +1,5 @@
+# Node js 를 설치한다. (npm 사용을 위함)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
